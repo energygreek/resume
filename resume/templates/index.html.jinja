@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1>Foo Bar</h1>
+            <p><a href="#">https://github.com/foobar</a></p>
+            <p>foobar@example.com | +123-456-7890</p>
+        </div>
+
+        <div class="columns">
+            <!-- Left Column -->
+            <div class="left-column">
+                <div class="photo"></div>
+                <div class="section">
+                    <h2>Education</h2>
+                    <p>Foo University</p>
+                    <p>Bachelor of Science, Computer Science</p>
+                    <p>Graduation: 2025</p>
+                </div>
+
+                <div class="section">
+                    <h2>Skills</h2>
+                    <ul>
+                    {% for item in resume['skills']  %}
+                        <li>{{ item.name }}</li>
+                    {% endfor %}
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2>Links</h2>
+                    <ul>
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="right-column">
+                <div class="section">
+                    <h2>Experience</h2>
+                    <p><strong>Software Developer Intern</strong> - FooTech</p>
+                    <p>Jan 2023 - Present</p>
+                    <p>Worked on improving system performance by refactoring legacy code in C++.</p>
+
+                    <p><strong>Web Developer</strong> - BarWeb</p>
+                    <p>May 2022 - Dec 2022</p>
+                    <p>Developed a customer-facing portal using React and Node.js.</p>
+                </div>
+
+                <div class="section">
+                    <h2>Projects</h2>
+                    <p><strong>FooBar App</strong></p>
+                    <p>Developed a task management app using Python and Flask.</p>
+
+                    <p><strong>OpenSource Contributions</strong></p>
+                    <p>Contributed to open-source libraries in Python and C++.</p>
+                </div>
+
+                <div class="section">
+                    <h2>Interests</h2>
+                    <p>Machine Learning, Open-Source Software, Traveling</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<style>
+  /* General Page Styles */
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f3f3f3;
+      color: #333;
+  }
+
+  .container {
+      width: 850px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 40px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+  }
+
+  .header {
+      text-align: center;
+      margin-bottom: 30px;
+  }
+
+  .header h1 {
+      font-size: 36px;
+      margin: 0;
+  }
+
+  .header p {
+      font-size: 14px;
+      margin: 5px 0;
+  }
+
+  .columns {
+      display: flex;
+      column-gap: 20px;
+  }
+
+  .left-column {
+      width: 30%;
+      border-right: 1px solid #ddd;
+      padding-right: 20px;
+  }
+
+  .right-column {
+      width: 70%;
+      padding-left: 20px;
+  }
+
+  .section {
+      margin-bottom: 20px;
+  }
+
+  .section h2 {
+      font-size: 18px;
+      color: #444;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+  }
+
+  .section p, .section li {
+      font-size: 14px;
+      line-height: 1.6;
+  }
+
+  ul {
+      list-style-type: none;
+      padding: 0;
+  }
+
+  .photo {
+      width: 120px;
+      height: 120px;
+      background: #ccc;
+      border-radius: 50%;
+      margin: 20px auto;
+  }
+
+  a {
+      color: #0073e6;
+      text-decoration: none;
+  }
+
+  /* Print Styles */
+  @media print {
+      body {
+          background: none;
+          box-shadow: none;
+      }
+  }
+</style>
+</html>
