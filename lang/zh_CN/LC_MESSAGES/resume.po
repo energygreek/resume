@@ -1,0 +1,45 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Project-Id-Version: MetaSearch 0.1-dev\n"
+"MIME-Version: 1.0\n"
+#_:7
+msgid "Resume of"
+msgstr "简历"
+
+#_:26
+msgid "Location"
+msgstr "住所"
+
+#_:32
+msgid "Education"
+msgstr "教育经历"
+
+#_:36
+msgid "Graduation"
+msgstr "毕业时间"
+
+#_:42
+msgid "Skills"
+msgstr "技能"
+
+#_:51
+msgid "Certificates"
+msgstr "证书"
+
+#_:60
+msgid "Links"
+msgstr "个人链接"
+
+#_:72
+msgid "Experience"
+msgstr "工作经历"
+
+#_:86
+msgid "Projects"
+msgstr "项目经历"
+
+#_:94
+msgid "Interests"
+msgstr "个人爱好"
+

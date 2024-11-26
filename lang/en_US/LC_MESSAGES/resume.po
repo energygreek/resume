@@ -1,0 +1,45 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Project-Id-Version: MetaSearch 0.1-dev\n"
+"MIME-Version: 1.0\n"
+#_:7
+msgid "Resume of"
+msgstr "Resume of"
+
+#_:26
+msgid "Location"
+msgstr "Location"
+
+#_:32
+msgid "Education"
+msgstr "Education"
+
+#_:36
+msgid "Graduation"
+msgstr "Graduation"
+
+#_:42
+msgid "Skills"
+msgstr "Skills"
+
+#_:51
+msgid "Certificates"
+msgstr "Certificates"
+
+#_:60
+msgid "Links"
+msgstr "Links"
+
+#_:72
+msgid "Experience"
+msgstr "Experience"
+
+#_:86
+msgid "Projects"
+msgstr "Projects"
+
+#_:94
+msgid "Interests"
+msgstr "Interests"
+
