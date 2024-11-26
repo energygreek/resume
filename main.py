@@ -18,4 +18,4 @@ resume = json.loads(content.decode('utf-8'))
 # print(resume['basics'])
 
 with open('index.html', 'w+') as f:
-  f.write(template.render(resume=resume))
+  f.write(template.render(resume=resume, basics=resume['basics']))
