@@ -18,7 +18,7 @@ def main(lang:str):
     env.install_gettext_translations(translations=gettext.translation(
         domain='resume', localedir=localedir, languages=[lang]))
 
-    content = pkgutil.get_data("resume", "resum.json")
+    content = pkgutil.get_data("resume", "resume.json")
     if content is None:
         print("can not find resume.json in app dir")
         exit(-1)
